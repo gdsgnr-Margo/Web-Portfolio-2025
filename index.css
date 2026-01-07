@@ -194,6 +194,8 @@ header {
 .contact {
     display: flex;
     gap: 12px;
+    display: flex;
+    align-items: center;
 }
 .logo-image {
     width: 24px;
@@ -216,8 +218,12 @@ header {
     width: 100%;
     height: 106px;
 }
+footer a {
+    text-decoration: none;
+}
 
-.container6 {
+
+.organizations {
     width: 1040px;
     display: flex;
     flex-direction: column;
@@ -231,8 +237,8 @@ header {
 
 .timeline {
     display: flex;
-    justify-content: center;
-    gap: 60px;
+    justify-content: space-between;
+    width: 100%;
     position: relative;
 }
 
