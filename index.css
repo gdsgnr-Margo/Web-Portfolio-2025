@@ -7,6 +7,7 @@
 }
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: var(--scroll-padding, 10rem);
 }
 body {
   font-family: 'Poppins', sans-serif;
@@ -129,7 +130,7 @@ header {
     width: 462px;
 }
 
-.aboutme {
+.frame {
     display: flex;
     width: 1040px;
     flex-direction: column;
@@ -141,12 +142,6 @@ header {
     gap: 12px;
 } 
 
-.education {
-    display: flex;
-    width: 1040px;
-    flex-direction: column;
-    gap: 32px;
-}
 .large-image {
     width: 100px;
     height: 100px;
@@ -208,7 +203,6 @@ header {
     display: flex;
     justify-content: center;
 }
-
 .container4 {
     padding: 20px;
     display: flex;
@@ -222,26 +216,17 @@ footer a {
     text-decoration: none;
 }
 
-
-.organizations {
-    width: 1040px;
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-}
 .orgs {
     text-align: center;
     display: flex;
     justify-content: space-between;
 }
-
 .timeline {
     display: flex;
     justify-content: space-between;
     width: 100%;
     position: relative;
 }
-
 /* horizontal line */
 .timeline::before {
     content: "";
@@ -250,10 +235,9 @@ footer a {
     left: 0;
     right: 0;
     height: 2px;
-    background: #ddd;
+    background: #01203F;
     z-index: 0;
 }
-
 .timeline-card {
     position: relative;
     cursor: pointer;
@@ -271,26 +255,22 @@ footer a {
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.02);
     border-radius: 30px;
 }
-
 /* dot */
 .timeline-card::before {
     content: "";
     width: 12px;
     height: 12px;
-    background: #111;
+    background: #01203F;
     border-radius: 50%;
     display: block;
     margin: 25px auto 0;
 }
-
-/* image */
 .medium-image {
     width: 48px;
     height: 48px;
     border-radius: 50%;
     margin-bottom: 8px;
 }
-
 /* hidden description */
 .timeline-details {
     position: absolute;
@@ -309,15 +289,14 @@ footer a {
     transition: all 0.35s ease;
     pointer-events: none;
 }
-
 /* hover animation */
 .timeline-card:hover .timeline-details {
     opacity: 1;
     transform: translateX(-50%) translateY(20px);
 }
-
 /* mobile click support */
 .timeline-card.active .timeline-details {
     opacity: 1;
     transform: translateX(-50%) translateY(20px);
 }
+
