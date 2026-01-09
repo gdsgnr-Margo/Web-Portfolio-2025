@@ -303,7 +303,7 @@ footer a {
     display: flex;
     width: 1040px;
     flex-direction: row;
-    gap: 32px;
+    justify-content: space-between;
     width: 100%;
     padding-right: 10px;
     padding-left: 10px;
@@ -370,6 +370,7 @@ footer a {
     justify-content: space-between;
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 .project-content {
     gap: 32px; 
