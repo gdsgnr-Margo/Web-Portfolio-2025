@@ -25,7 +25,7 @@
 
         <div class="hero" id="home">
             <img src="Pictures/fundano-1x1.png" alt="Profile Picture" class="profile-image">
-            <div class="container1">
+            <div class="hero-content">
                 <p class="large-text">Margaret Fundano</p>
                 <p class="medium-light-text">Graphic Designer & UIUX Designer</p>
                 <p class="small-text">Creating user-friendly designs and engaging visuals for web and mobile, blending creativity with functionality, with 3+ years of experience.</p>
@@ -34,7 +34,7 @@
 
         <div class="frame" id="about">
             <div class="medium-dark-text">About Me</div>
-            <div class="subcontent">
+            <div class="about-content">
                 <div class="small-text">Creative and detail-oriented Computer Science undergraduate with a strong focus on UI/UX and graphic design, combining technical knowledge with visual problem-solving. Experienced in designing user-centered interfaces, developing digital and print assets, and supporting web-based platforms for both corporate and small business environments.</div>
                 <div class="small-text">Proficient in translating concepts into functional and visually cohesive designs while collaborating effectively with cross-functional teams. A consistent Dean's Lister with a passion for building intuitive, engaging, and well-structured digital experiences.</div>
             </div>
@@ -42,8 +42,8 @@
 
         <div class="frame">
             <div class="medium-dark-text">Education</div>
-            <div class="subcontent2">
-                <div class="card">
+            <div class="education-content">
+                <div class="educ-card">
                     <img src="Pictures/pcshs-logo.png" alt="PCSHS" class="large-image">
                     <div class="subtext">
                         <div class="small-dark-text">Pasig City Science High School</div>
@@ -52,7 +52,7 @@
                         <div class="small-text">2016 - 2022</div>
                     </div>
                 </div>
-                <div class="card">
+                <div class="educ-card">
                     <img src="Pictures/plp-logo.png" alt="PLP" class="large-image">
                     <div class="subtext">
                         <div class="small-dark-text">Pamantasan Ng Lungsod Ng Pasig</div>
@@ -66,11 +66,11 @@
 
         <div class="frame">
             <div class="medium-dark-text">Organizations</div>
-            <div class="orgs">
+            <div class="orgs-content">
             
             <div class="timeline">
                 <div class="timeline-card" data-job="org1">
-                    <div class="container5">
+                    <div class="timeline-content">
                         <img src="Pictures/coalition-logo.png" alt="PCSHS Coalition" class="medium-image">
                         <div class="subtext">
                             <div class="small-dark-text">Creative Committee</div>
@@ -82,8 +82,8 @@
                     </div>
                 </div>
 
-                <div class="timeline-card" data-job="org1">
-                    <div class="container5">
+                <div class="timeline-card" data-job="org2">
+                    <div class="timeline-content">
                         <img src="Pictures/coalition-logo.png" alt="PCSHS Coalition" class="medium-image">
                         <div class="subtext">
                             <div class="small-dark-text">Creative Head Committee</div>
@@ -95,8 +95,8 @@
                     </div>
                 </div>
 
-                <div class="timeline-card" data-job="org1">
-                    <div class="container5">
+                <div class="timeline-card" data-job="org3">
+                    <div class="timeline-content">
                         <img src="Pictures/comsoc-logo.png" alt="PLP Computer Society" class="medium-image">
                         <div class="subtext">
                             <div class="small-dark-text">Graphic Designer</div>
@@ -109,7 +109,7 @@
                 </div>
 
                 <div class="timeline-card" data-job="org1">
-                    <div class="container5">
+                    <div class="timeline-content">
                         <img src="Pictures/comsoc-logo.png" alt="PLP Computer Society" class="medium-image">
                         <div class="subtext">
                             <div class="small-dark-text">Public Relations Officer</div>
@@ -125,18 +125,46 @@
         </div>
         </div>
         
-        <div class="frame">
+        <div class="frame" id="projects">
             <div class="medium-dark-text" id="projects">Projects</div>
-                <div class="card1">
-                    <img src="Pictures/project-retronichi.png" alt="PLP Computer Society" class="project-image">
-                    <div class="frame">
-                    <div class="subtext">
-                        <div class="small-dark-text">Retro Nichi</div>
-                        <div class="small-light-text">November 2023 - December 2023</div>
+                <div class="project-wrapper">
+
+                    <!--Left Arrow-->
+                    <div class="nav-arrow left" onclick="prevProject()"></div>
+
+                    <div class="project-card" id="projectCard">
+                        <div class="frame">
+                            <a href="https://retro-nichi.vercel.app/Shop.html" id="projectImage-link" class="projectImage-wrapper">
+                                <img src="Pictures/project-retronichi.png" alt="PLP Computer Society" class="projectImage" id="projectImage">
+                            </a>
+                        </div>
+                        
+
+                        <div class="project-details">
+
+                            <div class="project-content">
+                                <div class="subtext">
+                                    <div class="small-dark-text" id="projectTitle">Retro Nichi</div>
+                                    <div class="small-light-text" id="projectDate">
+                                        November 2023 - December 2023
+                                    </div>
+                                </div>
+                                <div class="subtext">
+                                    <div class="small-text" id="projectDesc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                                    </div>
+                            </div>
+                        </div>
+
+                        <a href="https://retro-nichi.vercel.app/Shop.html" class="btn" id="projectBtn-link">
+                            <img src="Pictures/folder-open.png" class="logo-image">
+                            View Projects
+                        </a>
+                        
                     </div>
-                    <div class="subtext">
-                        <div class="small-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </div>
-                    </div>
+                    
+
+                    <!--Right Arrow-->
+                    <div class="nav-arrow right" onclick="nextProject()"></div>
                 </div>
             </div>
         </div>

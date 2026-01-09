@@ -126,7 +126,7 @@ header {
     width: 374px;
     height: 374px;
 }
-.container1 {
+.hero-content {
     width: 462px;
 }
 
@@ -136,22 +136,21 @@ header {
     flex-direction: column;
     gap: 32px;
 }
-.subcontent {
+.about-content {
     display: flex;
     flex-direction: column;
     gap: 12px;
-} 
-
+}
 .large-image {
     width: 100px;
     height: 100px;
 }
-.subcontent2 {
+.education-content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.card {
+.educ-card {
     background-color: #ffffff;
     border-radius: 20px;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.02);
@@ -216,7 +215,7 @@ footer a {
     text-decoration: none;
 }
 
-.orgs {
+.orgs-content {
     text-align: center;
     display: flex;
     justify-content: space-between;
@@ -244,7 +243,7 @@ footer a {
     text-align: center;
     width: 240px;
 }
-.container5 {
+.timeline-content {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -300,20 +299,80 @@ footer a {
     transform: translateX(-50%) translateY(20px);
 }
 
-.card1 {
+.project-wrapper {
     display: flex;
     width: 1040px;
     flex-direction: row;
     gap: 32px;
     width: 100%;
-
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.projectImage-wrapper {
+    height: 476px;
+    width: 476px;
+    overflow: hidden;
+    border-radius: 15px;
+    display: block;
+}
+.projectImage-wrapper img {
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    height: 100%;
+}
+.projectImage-wrapper:hover img {
+    transform: scale(1.05);
+}
+.project-wrapper a {
+    text-decoration: none;
+}
+.project-card {
     background-color: #ffffff;
-    padding: 20px;
     border-radius: 20px;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.02);
+    padding: 20px;
+    width: 952px;
+    display: flex;
+    gap: 32px;
+    padding: 30px;
 }
-.project-image {
-    width: 476px;
-    height: 476px;
-    border-radius: 20px;
+.project-card .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    padding: 10px 10px;
+    width: 100%;
+
+    border: 1px solid #01203F;
+    border-radius: 30px;
+
+    color: #01203F;
+    text-decoration: none;
+
+    font-size: 0.9rem;
+    font-weight: 600;
+
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.project-card .btn:hover {
+    background-color: #01203F;
+    color: #ffffff;
+}
+.project-card .btn img {
+    transition: filter 0.3s ease;
+}
+.project-card .btn:hover img {
+    filter:brightness(0) invert(1);
+}
+.project-details {
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+}
+.project-content {
+    gap: 32px; 
+    display: flex;
+    flex-direction: column;
 }
