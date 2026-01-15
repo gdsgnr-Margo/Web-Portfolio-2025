@@ -39,7 +39,36 @@ function updateProject() {
     }
 */
 
+document.addEventListener("DOMContentLoaded", () => {
+    updateProject(currentIndex);
+});
+
+let currentIndex = 0;
+
+function updateProject(index) {
+    const card = document.getElementById("projectCard");
+    card.classList.add("fade");
+    setTimeout(() => {
+
+        document.getElementById("projectImage-link").href = projects[index].link;
+        document.getElementById("projectTitle").textContent = projects[index].title;
+        document.getElementById("projectDate").textContent = projects[index].date;
+        document.getElementById("projectDesc").textContent = projects[index].description;
+        document.getElementById("projectImage").src = projects[index].image;
+        document.getElementById("projectBtn-link").href = projects[index].link;
+
+        card.classList.remove("fade");
+    }, 300);
+}
+
 const projects = [
+    {
+        link: "https://www.figma.com/design/03jcEbzOtPPwG91OFROIUe/Projects--Copy-?node-id=1-1287&t=gxf0VWFrYjlxQ2A4-1",
+        title: "PapaBibs Kitchen",
+        date: "April 2025 - May 2025",
+        description: "PapaBib’s Kitchen is a web-based food ordering platform designed to provide customers with a seamless and engaging experience from browsing the menu to completing their purchase. As the UI/UX designer of the team, my role focused on crafting intuitive user flows, ensuring visual consistency, and optimizing the overall customer experience through clear layouts, responsive design, and engaging interactions.",
+        image: "Pictures/cs-papabibs.png"
+    },
     {
         link: "https://talk-n-sip-v2.vercel.app/",
         title: "Talk 'n Sip",
@@ -113,23 +142,7 @@ const projects = [
 
 ];
 
-let currentIndex = 0;
 
-function updateProject(index) {
-    const card = document.getElementById("projectCard");
-    card.classList.add("fade");
-    setTimeout(() => {
-
-        document.getElementById("projectImage-link").href = projects[index].link;
-        document.getElementById("projectTitle").textContent = projects[index].title;
-        document.getElementById("projectDate").textContent = projects[index].date;
-        document.getElementById("projectDesc").textContent = projects[index].description;
-        document.getElementById("projectImage").src = projects[index].image;
-        document.getElementById("projectBtn-link").href = projects[index].link;
-
-        card.classList.remove("fade");
-    }, 300);
-}
 
 function nextProject() {
     currentIndex = (currentIndex + 1) % projects.length;
