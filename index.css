@@ -36,7 +36,7 @@ header {
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
 
-    border-radius: 20px;
+    border-radius: 50px;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
 }
 .nav-links {
