@@ -84,14 +84,14 @@ const projects = [
         image: "Pictures/cs-retronichi.png"
     },
     {
-        link: "https://complexity-delta.vercel.app/",
+        link: "https://www.figma.com/design/03jcEbzOtPPwG91OFROIUe/Projects--Copy-?node-id=0-1&t=VBJTGT29gMngMFWj-1",
         title: "Portfolio",
         date: "April 2023 - May 2023",
         description: "My first portfolio project is a web-based platform created to showcase my skills and abilities as a designer. The site serves as a professional portfolio where I present my experience and skills. As the developer, I was responsible for building the entire system from designing the UI/UX to implementing the backend logic, using HTM and CSS.",
         image: "Pictures/cs-portfolio.png"
     },
     {
-        link: "https://complexity-delta.vercel.app/",
+        link: "https://www.figma.com/design/03jcEbzOtPPwG91OFROIUe/Projects--Copy-?node-id=2-13841&t=VBJTGT29gMngMFWj-1",
         title: "Quest Commute",
         date: "November 2025",
         description: "Quest Commute is a mobile application created to transform daily commuting into an interactive and engaging experience. The app serves as a gamified navigation tool where users can plan routes, track their journeys, and earn rewards through quests, points, and avatar customization. As the UI/UX designer, I was responsible for prototyping the entire design, focusing on immersive user flows, intuitive interfaces, and engaging visual elements to ensure a responsive, interactive, and user-centered mobile experience.",
