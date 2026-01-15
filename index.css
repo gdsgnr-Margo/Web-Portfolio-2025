@@ -7,11 +7,11 @@
 }
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: var(--scroll-padding, 10rem);
+  scroll-padding-top: 10rem;
 }
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #FBFBFB;
+  background-color: #f7f7f7;
   color: #3B3B3B;
 }
 header {
@@ -37,7 +37,7 @@ header {
     -webkit-backdrop-filter: blur(12px);
 
     border-radius: 20px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.02);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
 }
 .nav-links {
     list-style: none;
@@ -153,7 +153,7 @@ header {
 .educ-card {
     background-color: #ffffff;
     border-radius: 20px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.02);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
     padding: 20px;
     width: 505px;
 
@@ -251,7 +251,7 @@ footer a {
     margin-top: 20px;
     padding: 15px;
     background-color: #ffffff;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.02);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
     border-radius: 20px;
 }
 /* dot */
@@ -284,7 +284,7 @@ footer a {
     padding: 55px 15px 20px 15px;
     border-radius: 0 0 20px 20px;
 
-    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
     transition: all 0.35s ease;
     pointer-events: none;
 }
@@ -299,11 +299,14 @@ footer a {
     transform: translateX(-50%) translateY(20px);
 }
 
+
+
 .project-wrapper {
     display: flex;
     width: 1040px;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
     padding-right: 10px;
     padding-left: 10px;
@@ -329,12 +332,13 @@ footer a {
 .project-card {
     background-color: #ffffff;
     border-radius: 20px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.02);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
     padding: 20px;
     width: 952px;
     display: flex;
     gap: 32px;
     padding: 30px;
+    transition: opacity 0.4s ease;
 }
 .project-card .btn {
     display: flex;
@@ -377,3 +381,47 @@ footer a {
     display: flex;
     flex-direction: column;
 }
+.project-card.fade {
+    opacity: 0;
+}
+.nav-arrow {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.02);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    user-select: none;
+}
+
+.nav-arrow:hover {
+    background: #f7f7f7;
+}
+
+.nav-arrow.left {
+    left: -60px;
+}
+
+.nav-arrow.right {
+    right: -60px;
+}
+.nav-arrow::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #01203F;
+    border-right: 2px solid #01203F;
+    display: block;
+}
+
+.nav-arrow.left::before {
+    transform: rotate(-135deg);
+}
+
+.nav-arrow.right::before {
+    transform: rotate(45deg);
+}
+
