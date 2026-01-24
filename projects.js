@@ -84,7 +84,7 @@ const projects = [
         image: "Pictures/cs-retronichi.png"
     },
     {
-        link: "https://www.figma.com/design/03jcEbzOtPPwG91OFROIUe/Projects--Copy-?node-id=0-1&t=VBJTGT29gMngMFWj-1",
+        link: "https://complexity-delta.vercel.app/",
         title: "Portfolio",
         date: "April 2023 - May 2023",
         description: "My first portfolio project is a web-based platform created to showcase my skills and abilities as a designer. The site serves as a professional portfolio where I present my experience and skills. As the developer, I was responsible for building the entire system from designing the UI/UX to implementing the backend logic, using HTM and CSS.",
