@@ -58,7 +58,7 @@ function updateProject(index) {
         document.getElementById("projectBtn-link").href = projects[index].link;
     /*
         card.classList.remove("fade");
-    }, 300); */
+    }, 300); */ 
 }
 
 const projects = [
